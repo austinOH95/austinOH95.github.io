@@ -1,0 +1,133 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	/*background-image: url("bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;*/
+}
+
+h1, h2, h3, p {
+	color: white;
+	text-align: center;
+	top: 5%;
+	bottom: 5%;
+	font-family: Copperplate, Papyrus, fantasy;
+}
+
+h2, h3 {
+	color: rgb(0,128,128);
+	text-shadow: 1px 1px rgb(0,128,128, .50);
+}
+
+iframe {
+	width: 750px;
+	height: 350px;
+	border-radius: 5%;
+	border: 3px solid white;
+}
+
+img {
+	width: 600px;
+	height: 400px;
+	border-radius: 5%;
+	border: 3px solid white;
+}
+
+.container {
+	top: 5%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 50px;
+	background-image: url("bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.items {
+	flex-basis: | auto;
+}
+
+.game {
+	background: rgb(0,128,128, .70);
+	width: 350px;
+	height: 150px;
+	border-radius: 5%;
+	text-align: center;
+	border: 3px solid white;
+}
+
+.banner-top {
+	text-align: center;
+	background: rgb(0,128,128, .85);
+	border-top: 2px solid rgba(0, 0, 0, 0.1); 
+    border-bottom: 2px solid rgba(255, 255, 255,0.3);
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.banner-bottom {
+	text-align: center;
+	background: rgb(0,128,128, .85);
+	border-top: 2px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+/* Medium screens */
+@media all and (max-width: 1000px) {
+	iframe {
+		width: 450px;
+		height: 320px;
+	}
+	.game {
+		width: 300px;
+		height: 150px;
+
+	}
+	img {
+		width: 300px;
+		height: 200px;
+	}
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+	iframe {
+		width: 350px;
+		height: 200px;
+	}
+	.game {
+		width: 250px;
+		height: 150px;
+
+	}
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+	iframe {
+		width: 200px;
+		height: 100px;
+	}
+	.game {
+		width: 200px;
+		height: 200px;
+
+	}
+	img {
+		width: 200px;
+		height: 130px;
+	}
+}
